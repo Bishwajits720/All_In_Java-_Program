@@ -5,7 +5,7 @@ import  java.util.*;
 public class dublicate {
     public static void main(String[] args) {
 
-        int arr[]={1,2,3,3,2,4,5,1};
+        int arr[]={1,2,3,3,2,4,5,1,1,2,3,4,5,6};
         dub(arr);
 
 
@@ -15,6 +15,8 @@ public class dublicate {
 
         HashMap<Integer ,Integer> h =new HashMap<>();
 
+        ArrayList<Integer> a = new ArrayList<>();
+
         for (int i = 0; i <arr.length ; i++) {
             if (h.containsKey(arr[i])){
                h.put(arr[i], h.get(arr[i])+1 );
@@ -22,11 +24,11 @@ public class dublicate {
                 h.put(arr[i], 1);
             }
         }
-        for (int i = 0; i < arr.length ; i++) {
-            if (h.get(arr[i])==1)
-                System.out.println(arr[i]);
-        }
-
-
+     for (Map.Entry<Integer ,Integer> e : h.entrySet()){
+         if (e.getValue() >=1){
+             a.add(e.getKey());
+         }
+     }
+        System.out.println(a);
     }
 }
