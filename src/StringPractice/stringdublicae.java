@@ -26,7 +26,7 @@ public class stringdublicae {
 
        for (Map.Entry<Character ,Integer> e : h.entrySet()){
            if (e.getValue() >=1 ){
-               System.out.println(e.getClass());
+               System.out.println(e.getKey());
            }
 
        }

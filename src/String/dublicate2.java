@@ -46,7 +46,7 @@ public class dublicate2 {
 //        Scanner sc =  new Scanner(System.in);
 //        System.out.println("enter the value");
 //        String str = sc.next();
-        s.dublicate(str);
+        s.dubmap(str);
 
     }
 }

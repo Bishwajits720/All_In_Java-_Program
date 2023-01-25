@@ -14,7 +14,8 @@ public class oops1 {
     int marks;
     String name;
 
-   childern(){
+   childern()
+   {
        this(18,"bishwa");
    }
      childern(int marks ,String name){
