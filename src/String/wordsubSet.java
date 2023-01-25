@@ -7,7 +7,7 @@ import java.util.List;
 public class wordsubSet {
     public static void main(String[] args) {
         String[] A ={"facebook" , "leetcode" , "google" , "amazon"};
-        String[] B= {"c" ,"o"};
+        String[] B= {"g" ,"o"};
 
         System.out.println(wordSubset(A,B));
 
@@ -51,3 +51,9 @@ public class wordsubSet {
         return result;
     }
 }
+
+
+//A ={"facebook" , "leetcode" , "google" , "amazon"};
+//B= {"g" ,"o"};
+// b_frequency =[0,0,0,0,1,0,0,0,0,0,0,0,0,1,0]   make a frequency table
+// a_frequency= [1,2,3,4,2,3,4,4,2,3,424,42,3,3]
